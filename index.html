@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+        <!-- navigation bar code starts here -->
+        <nav>
+            <ul>  <!-- unordered list -->
+                <li class="navButton">FAQ</li>
+                <li class="navButton">Contact</li>
+                <li class="navButton">About</li>
+                <li class="navButton">Home</li>
+            </ul>
+            <!-- the code below is how to add image with a classname 'logo' -->
+            <img src="Monkey_D._Luffy.webp" alt="" class="logo"> 
+
+            <!-- the code below is how to add title with a classname 'webTitle' -->
+            <h1 class="webTitle">ONE PIECE</h1>
+        </nav>
+        <!-- navigation bar code ends here -->
+
+        <!-- big image cover -->
+        <img class="cover" src="one-piece-anime.avif" alt="">
+
+        <div class="textContainer">
+            
+            <img src="Monkey_D._Luffy.webp" class="img1"> <!-- image of luffy float to left  -->
+
+            <p>One Piece (stylized in all caps) is a Japanese manga series written and illustrated by Eiichiro Oda.
+                It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997,
+                with its individual chapters compiled into 106 tankōbon volumes as of July 2023. 
+                The story follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates,
+                where he explores the Grand Line in search of the mythical treasure known as the "One Piece" in order to 
+                become the next King of the Pirates.</p>
+            <br> <!-- break line to skip one line -->
+            <p>
+                The manga spawned a media franchise, having been adapted into a festival film by Production I.G, 
+                and an anime series by Toei Animation, which began broadcasting in 1999. Additionally, Toei has 
+                developed fourteen animated feature films, one original video animation, and thirteen television 
+                specials. Several companies have developed various types of merchandising and media, such as a 
+                trading card game and numerous video games. The manga series was licensed for an English language 
+                release in North America and the United Kingdom by Viz Media and in Australia by Madman Entertainment. 
+                The anime series was licensed by 4Kids Entertainment for an English-language release in North America 
+                in 2004 before the license was dropped and subsequently acquired by Funimation in 2007.</p>
+            
+            <img src="Sunny.webp" class="img2" > <!-- image of the ship float to right  -->
+            <br> <!-- break line to skip one line -->
+            <p>
+                One Piece has received praise for its storytelling, world-building, art, characterization, and humor. 
+                It has received many awards and is ranked by critics, reviewers, and readers as one of the best manga 
+                of all time. By August 2022, it had over 516.6 million copies in circulation in 61 countries and 
+                regions worldwide, making it the best-selling manga series in history, and the best-selling comic 
+                series printed in book volume.</p>
+            <p>
+                Several volumes of the manga have broken publishing records, including the highest initial print run of 
+                any book in Japan. In 2015 and 2022, One Piece set the Guinness World Record for "the most copies published 
+                for the same comic book series by a single author". It was the best-selling manga for eleven consecutive years 
+                from 2008 to 2018, and is the only manga that had an initial print of volumes of above 3 million continuously 
+                for more than 10 years, as well as the only that had achieved more than 1 million copies sold in all of its over 
+                100 published tankōbon volumes. One Piece is the only manga whose volumes have ranked first every year in Oricon's 
+                weekly comic chart existence since 2008.
+            </p>
+
+            <!-- anchor tag inside a paragraph tag -->
+            <p>source: <a href="https://en.wikipedia.org/wiki/One_Piece">wiki</a></p>
+        </div>
+
+         <!-- images of the wanted poster -->
+
+         
+        <img class="wanted" src="wanted.webp" >  
+    </body>
+
+    <style>
+        /* importing a third party font from online source */
+        @import url(https://db.onlinewebfonts.com/c/82848488b73a87d72f2436c02b9ab608?family=ONE+PIECE);
+        @font-face {
+            font-family: "ONE PIECE";
+            src: url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.eot");
+            src: url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/82848488b73a87d72f2436c02b9ab608.svg#ONE PIECE")format("svg");
+        } 
+        
+        /* import code ends here. You may not include this if you will not use the one piece font */
+       
+        *{
+            margin: 0;
+        }
+
+        /* top botton navigation style properties 
+            HOME, ABOUT, CONTACT, FAQ, ETC...
+
+            list-style-type:none to remove the bullets or dots
+            float:right to make the elements floating to the right side
+        */
+        .navButton{
+            padding: 20px;
+            font-family: monospace;
+            color: #BDC9D7;
+            list-style-type: none;
+            float: right;
+            font-size: 35px;
+            border-left: 1px solid black;
+        }
+
+
+        /* top navigation style properties 
+            position:fixed to make the navigation bar stick at the top most part of the webpage
+            gradient is from https://cssgradient.io/
+            */
+        nav{
+            width: 100%;
+            position: fixed;
+            height: 80px;
+            background: linear-gradient(90deg, rgba(11,12,41,1) 0%, rgba(16,16,135,1) 56%, rgba(4,135,162,1) 100%);}
+
+        /* luffy image as a logo float to the left side of the navigation bar */
+        .logo{
+            height: 80px;
+            float: left;
+        }
+
+        /* web page title font family change to one piece */
+        .webTitle{
+            font-family: "ONE PIECE";
+            font-size: 70px;
+            color: #d34a56;
+        }
+
+        /* big one piece image width set to 100% to 
+        occupy the whole width */
+        .cover{
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        /* div that has a classname textContainer
+        which contains the text of our web page
+        black border is also added
+        */
+        .textContainer{
+            margin-left: 10px;
+            margin-right: 20px;
+            overflow: auto;
+            border: 3px solid black;
+            
+        }
+
+        /* picture of luffy inside the textContainer that float to left */
+        .img1{
+            height: 350px;
+            float: left;
+        }
+        /* picture of the ship inside the textContainer that float to right */
+        .img2{
+            height: 450px;
+            margin-right: 10px;
+            margin-left: 10px;
+            float: right;     
+        }
+        
+        /* style of the text inside the .textContainer */
+        p{
+            font-size: 30px;
+            text-align: justify;
+            margin-right: 20px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+
+        /* big wanted image width set to 100% to 
+        occupy the whole width */
+        .wanted{
+            width: 100%;
+            margin-top: 20px;
+        }
+
+    </style>
+</html>
